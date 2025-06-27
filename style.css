@@ -1,0 +1,150 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+}
+
+.business-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  user-select: none;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #d1c4e9;
+}
+
+.contact-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.75rem;
+}
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #ffcc00;
+  outline: none;
+}
+
+.company-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #b39ddb;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #ffcc00;
+  outline: none;
+}
+
+#copy-contact {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#copy-contact:hover,
+#copy-contact:focus {
+  background-color: #e6b800;
+  outline: none;
+}
+
+.copy-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffcc00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .business-card {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .social-link {
+    font-size: 1.5rem;
+  }
+}
