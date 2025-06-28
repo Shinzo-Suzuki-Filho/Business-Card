@@ -22,12 +22,17 @@ main {
 }
 
 .business-card {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #3a5f9e, #2a4a7b, #1f3a5a);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   text-align: center;
   user-select: none;
+  color: #d0d9f7;
+  border: 1px solid #2a3e6a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .logo-container {
