@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartão de Visita Digital</title>
+    <title>Shinzo Suzuki - Desenvolvedor Web Front-End | CriArtWeb</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <div class="particles"></div>
+
     <main>
       <section
         class="business-card"
@@ -20,7 +23,7 @@
         <header>
           <div class="logo-container">
             <img
-              src="./src/img/Logo-CriArtWeb.png"
+              src="src/img/Logo-CriArtWeb.png"
               alt="Logo da CriArtWeb"
               class="logo"
               width="120"
@@ -30,6 +33,7 @@
           <h1 class="name">Shinzo Suzuki</h1>
           <h2 class="title">Desenvolvedor Web Front-End</h2>
         </header>
+
         <ul class="contact-list">
           <li>
             <a
@@ -46,22 +50,36 @@
               href="mailto:agencia.criartweb@gmail.com"
               class="contact-link"
               aria-label="Enviar e-mail para Shinzo Suzuki"
-              id="email-link"
             >
               <i class="fas fa-envelope" aria-hidden="true"></i>
               <span>agencia.criartweb@gmail.com</span>
             </a>
           </li>
         </ul>
+
         <div class="company-name" aria-label="Nome da empresa">CriArtWeb</div>
-        <nav class="social-links" aria-label="Redes sociais">
+
+        <nav class="social-links" aria-label="Contatos e redes sociais">
+          <a
+            href="tel:+5582988886434"
+            class="social-link phone"
+            aria-label="Ligar para Shinzo Suzuki"
+          >
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          </a>
+          <a
+            href="mailto:agencia.criartweb@gmail.com"
+            class="social-link email"
+            aria-label="Enviar e-mail para Shinzo Suzuki"
+          >
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
           <a
             href="https://instagram.com/agencia.criartweb/"
             target="_blank"
             rel="noopener noreferrer"
             class="social-link instagram"
             aria-label="Instagram da CriArtWeb"
-            id="instagram-link"
           >
             <i class="fab fa-instagram" aria-hidden="true"></i>
           </a>
@@ -71,14 +89,24 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp da CriArtWeb"
-            id="whatsapp-link"
           >
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
           </a>
         </nav>
-        
+
+        <div class="action-buttons">
+          <button class="action-btn" onclick="saveContact()">
+            <i class="fas fa-download"></i>
+            Salvar Contato
+          </button>
+          <button class="action-btn" onclick="shareCard()">
+            <i class="fas fa-share"></i>
+            Compartilhar
+          </button>
+        </div>
       </section>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
